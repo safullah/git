@@ -1,1 +1,3 @@
-Bismillah. Git and GitHub. Listen Properly
+15.12.19
+Bismillah: Git and GitHub
+https://git-scm.com/doc
