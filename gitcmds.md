@@ -58,6 +58,9 @@ git pull --allow-unrelated-histories <branch>
 //setup upstream
 git push --set-upstream origin master
 
+#### renaming a repository
+$ git remote set-url origin <new_url>
+
 //tutorial
 https://guides.github.com/activities/hello-world/
 https://www.git-scm.com
