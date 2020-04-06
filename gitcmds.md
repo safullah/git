@@ -192,3 +192,36 @@ HEAD is now set to that previous commit.
 git checkout HEAD filename: Discards changes in the working directory.
 git reset HEAD filename: Unstages file changes in the staging area.
 git reset commit_SHA: Resets to a previous commit in your commit history.
+
+git branch: Lists all a Git project’s branches.
+git branch branch_name: Creates a new branch.
+git checkout branch_name: Used to switch from one branch to another.
+git merge branch_name: Used to join file changes from one branch to another.
+git branch -d branch_name: Deletes the branch specified.
+
+You’ll need the -D option, because these feature branches were never merged into master:
+git branch -D branchname
+
+Enter git remote -v to list the remotes.
+Notice the output:
+origin    /home/ccuser/workspace/curriculum/science-quizzes (fetch)
+origin    /home/ccuser/workspace/curriculum/science-quizzes (push)
+Git lists the name of the remote, origin, as well as its location.
+Git automatically names this remote origin, because it refers to the remote repository of origin. However, it is possible to safely change its name.
+The remote is listed twice: once for (fetch) and once for (push). We’ll learn about these later in the lesson.
+
+ch and merge changes from the remote
+Create a branch to work on a new project feature
+Develop the feature on your branch and commit your work
+Fetch and merge from the remote again (in case new commits were made while you were working)
+Push your branch up to the remote for review
+Steps 1 and 4 are a safeguard against merge conflicts, which occur when two branches contain file changes that cannot be merged with the git merge command.
+
+A remote is a Git repository that lives outside your Git project folder. Remotes can live on the web, on a shared network or even in a separate folder on your local computer.
+The Git Collaborative Workflow are steps that enable smooth project development when multiple collaborators are working on the same Git project.
+
+git clone: Creates a local copy of a remote.
+git remote -v: Lists a Git project’s remotes.
+git fetch: Fetches work from the remote into the local copy.
+git merge origin/master: Merges origin/master into your local branch.
+git push origin <branch_name>: Pushes a local branch to the origin remote.
