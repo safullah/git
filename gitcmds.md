@@ -26,6 +26,8 @@ Should be brief (50 characters or less) when using -m
 
 git remote add origin git@github.com:safullah/angularjs.git
 git push -u origin master
+//check tracking branch
+git branch -vv
 
 $ mkdir project.git
 $ cd project.git
