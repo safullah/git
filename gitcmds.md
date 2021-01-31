@@ -1,5 +1,23 @@
+
+```git
+#create a new repository on the command line
+
+echo "# <reponame>" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/safullah/<reponame>.git
+git push -u origin main
+
+#or push an existing repository from the command line
+git remote add origin https://github.com/safullah/.vscode.git
+git branch -M main
+git push -u origin main
+```
+
 # git
-echo "# angularjs" >> README.md
+echo "# <reponame>" >> README.md
 git init 
 The word init means initialize. The command sets up all the tools Git needs to begin tracking changes made to the project.
 intitialzes a new git project
